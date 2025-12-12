@@ -1,0 +1,467 @@
+{
+  "version": 4,
+  "terraform_version": "1.13.5",
+  "serial": 10,
+  "lineage": "ab8a8dde-5506-33e4-547b-26845456ca39",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "huaweicloud_elb_listener",
+      "name": "basic",
+      "provider": "provider[\"registry.terraform.io/huaweicloud/huaweicloud\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "access_policy": "",
+            "advanced_forwarding_enabled": false,
+            "ca_certificate": "",
+            "cps": 0,
+            "created_at": "2025-12-06T19:43:26Z",
+            "default_pool_id": "",
+            "description": "basic description",
+            "enable_member_retry": false,
+            "enable_quic_upgrade": null,
+            "enterprise_project_id": "0",
+            "force_delete": null,
+            "forward_eip": false,
+            "forward_elb": false,
+            "forward_host": true,
+            "forward_port": false,
+            "forward_proto": false,
+            "forward_request_port": false,
+            "forward_tls_certificate": false,
+            "forward_tls_cipher": false,
+            "forward_tls_protocol": false,
+            "gzip_enable": false,
+            "http2_enable": false,
+            "id": "da784713-cdc6-4314-b3ac-70c8c317b4a1",
+            "idle_timeout": 60,
+            "ip_group": "",
+            "ip_group_enable": "",
+            "loadbalancer_id": "ff46833c-0180-4188-8c9a-e61219d53242",
+            "max_connection": 0,
+            "name": "basic",
+            "port_ranges": [],
+            "protection_reason": "",
+            "protection_status": "nonProtection",
+            "protocol": "HTTP",
+            "protocol_port": 80,
+            "proxy_protocol_enable": false,
+            "quic_listener_id": "",
+            "real_ip": false,
+            "region": "af-south-1",
+            "request_timeout": 60,
+            "response_timeout": 60,
+            "security_policy_id": "",
+            "server_certificate": "",
+            "sni_certificate": null,
+            "sni_match_algo": "",
+            "ssl_early_data_enable": false,
+            "tags": {},
+            "timeouts": null,
+            "tls_ciphers_policy": "",
+            "updated_at": "2025-12-06T19:43:26Z"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6NjAwMDAwMDAwMDAwLCJ1cGRhdGUiOjYwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "huaweicloud_elb_loadbalancer.basic",
+            "huaweicloud_vpc.test",
+            "huaweicloud_vpc_eip.dedicated",
+            "huaweicloud_vpc_subnet.elb-subnet"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "huaweicloud_elb_loadbalancer",
+      "name": "basic",
+      "provider": "provider[\"registry.terraform.io/huaweicloud/huaweicloud\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "auto_pay": null,
+            "auto_renew": null,
+            "autoscaling_enabled": true,
+            "availability_zone": [
+              "af-south-1-los1a"
+            ],
+            "backend_subnets": [
+              "77dfeac2-21e9-4954-a2e7-601e8386fd55"
+            ],
+            "bandwidth_charge_mode": null,
+            "bandwidth_id": null,
+            "bandwidth_size": null,
+            "charge_mode": "lcu",
+            "charging_mode": "postPaid",
+            "created_at": "2025-12-06T19:43:11Z",
+            "cross_vpc_backend": true,
+            "deletion_protection_enable": null,
+            "description": "",
+            "elb_virsubnet_type": "ipv4",
+            "enterprise_project_id": "0",
+            "force_delete": null,
+            "frozen_scene": "",
+            "guaranteed": true,
+            "gw_flavor_id": "",
+            "id": "ff46833c-0180-4188-8c9a-e61219d53242",
+            "iptype": null,
+            "ipv4_address": "192.168.2.217",
+            "ipv4_eip": "83.101.50.237",
+            "ipv4_eip_id": "0f424ba2-8265-498d-a05d-a6beea2f2785",
+            "ipv4_port_id": "3c7f2aee-12c2-4688-bdd6-fa1190c66404",
+            "ipv4_subnet_id": "1fcc815a-c2a4-425a-8cd2-913093dd0d96",
+            "ipv6_address": "",
+            "ipv6_bandwidth_id": null,
+            "ipv6_eip": null,
+            "ipv6_eip_id": null,
+            "ipv6_network_id": "",
+            "l4_flavor_id": "bc46db40-511d-4f10-a8d6-45d76632e77e",
+            "l7_flavor_id": "98480000-53c1-4ee3-a100-6fcdc91174b8",
+            "loadbalancer_type": "",
+            "min_l7_flavor_id": "",
+            "name": "summit-elb2",
+            "operating_status": "ONLINE",
+            "period": null,
+            "period_unit": null,
+            "protection_reason": "",
+            "protection_status": "nonProtection",
+            "public_border_group": "af-south-1-los1",
+            "region": "af-south-1",
+            "sharetype": null,
+            "tags": {},
+            "timeouts": null,
+            "updated_at": "2025-12-06T19:43:13Z",
+            "vpc_id": "f5c2e2ad-48f0-4662-9fe1-9cd5589dfcd2",
+            "waf_failure_action": "forward"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjYwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "huaweicloud_vpc.test",
+            "huaweicloud_vpc_eip.dedicated",
+            "huaweicloud_vpc_subnet.elb-subnet"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "huaweicloud_elb_monitor",
+      "name": "monitor_1",
+      "provider": "provider[\"registry.terraform.io/huaweicloud/huaweicloud\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "created_at": "2025-12-06T19:43:23Z",
+            "domain_name": "app1.ralf.com.ng",
+            "enabled": true,
+            "http_method": "GET",
+            "id": "6a7579c1-7f35-45a9-994d-90b2613abde6",
+            "interval": 30,
+            "max_retries": 8,
+            "max_retries_down": 3,
+            "name": "",
+            "pool_id": "8e677ce5-8f14-4126-a26b-ac579e8c1382",
+            "port": 3002,
+            "protocol": "HTTP",
+            "region": "af-south-1",
+            "status_code": "200",
+            "timeout": 20,
+            "updated_at": "2025-12-06T19:43:23Z",
+            "url_path": "/date"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "huaweicloud_elb_loadbalancer.basic",
+            "huaweicloud_elb_pool.pool_1",
+            "huaweicloud_vpc.test",
+            "huaweicloud_vpc_eip.dedicated",
+            "huaweicloud_vpc_subnet.elb-subnet"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "huaweicloud_elb_monitor",
+      "name": "monitor_2",
+      "provider": "provider[\"registry.terraform.io/huaweicloud/huaweicloud\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "created_at": "2025-12-06T19:43:22Z",
+            "domain_name": "app2.ralf.com.ng",
+            "enabled": true,
+            "http_method": "GET",
+            "id": "18449d10-6525-4878-a5f8-65bd7286d69c",
+            "interval": 30,
+            "max_retries": 8,
+            "max_retries_down": 3,
+            "name": "",
+            "pool_id": "f33c7996-8c18-4a02-948a-ba224930e107",
+            "port": 3000,
+            "protocol": "HTTP",
+            "region": "af-south-1",
+            "status_code": "200",
+            "timeout": 20,
+            "updated_at": "2025-12-06T19:43:22Z",
+            "url_path": "/time"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "huaweicloud_elb_loadbalancer.basic",
+            "huaweicloud_elb_pool.pool_2",
+            "huaweicloud_vpc.test",
+            "huaweicloud_vpc_eip.dedicated",
+            "huaweicloud_vpc_subnet.elb-subnet"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "huaweicloud_elb_pool",
+      "name": "pool_1",
+      "provider": "provider[\"registry.terraform.io/huaweicloud/huaweicloud\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "any_port_enable": false,
+            "connection_drain_enabled": false,
+            "connection_drain_timeout": 0,
+            "created_at": "2025-12-06T19:43:21Z",
+            "deletion_protection_enable": false,
+            "description": "",
+            "enable_force_new": null,
+            "enterprise_project_id": "0",
+            "id": "8e677ce5-8f14-4126-a26b-ac579e8c1382",
+            "ip_version": "v4",
+            "lb_method": "ROUND_ROBIN",
+            "listener_id": "",
+            "loadbalancer_id": "ff46833c-0180-4188-8c9a-e61219d53242",
+            "minimum_healthy_member_count": 0,
+            "monitor_id": "",
+            "name": "summit_demo_pool1",
+            "persistence": [],
+            "protection_reason": "",
+            "protection_status": "nonProtection",
+            "protocol": "HTTP",
+            "public_border_group": "af-south-1-los1",
+            "region": "af-south-1",
+            "slow_start_duration": 100,
+            "slow_start_enabled": true,
+            "timeouts": null,
+            "type": "",
+            "updated_at": "2025-12-06T19:43:21Z",
+            "vpc_id": ""
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6NjAwMDAwMDAwMDAwLCJ1cGRhdGUiOjYwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "huaweicloud_elb_loadbalancer.basic",
+            "huaweicloud_vpc.test",
+            "huaweicloud_vpc_eip.dedicated",
+            "huaweicloud_vpc_subnet.elb-subnet"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "huaweicloud_elb_pool",
+      "name": "pool_2",
+      "provider": "provider[\"registry.terraform.io/huaweicloud/huaweicloud\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "any_port_enable": false,
+            "connection_drain_enabled": false,
+            "connection_drain_timeout": 0,
+            "created_at": "2025-12-06T19:43:20Z",
+            "deletion_protection_enable": false,
+            "description": "",
+            "enable_force_new": null,
+            "enterprise_project_id": "0",
+            "id": "f33c7996-8c18-4a02-948a-ba224930e107",
+            "ip_version": "v4",
+            "lb_method": "ROUND_ROBIN",
+            "listener_id": "",
+            "loadbalancer_id": "ff46833c-0180-4188-8c9a-e61219d53242",
+            "minimum_healthy_member_count": 0,
+            "monitor_id": "",
+            "name": "summit_demo_pool2",
+            "persistence": [],
+            "protection_reason": "",
+            "protection_status": "nonProtection",
+            "protocol": "HTTP",
+            "public_border_group": "af-south-1-los1",
+            "region": "af-south-1",
+            "slow_start_duration": 100,
+            "slow_start_enabled": true,
+            "timeouts": null,
+            "type": "",
+            "updated_at": "2025-12-06T19:43:20Z",
+            "vpc_id": ""
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6NjAwMDAwMDAwMDAwLCJ1cGRhdGUiOjYwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "huaweicloud_elb_loadbalancer.basic",
+            "huaweicloud_vpc.test",
+            "huaweicloud_vpc_eip.dedicated",
+            "huaweicloud_vpc_subnet.elb-subnet"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "huaweicloud_vpc",
+      "name": "test",
+      "provider": "provider[\"registry.terraform.io/huaweicloud/huaweicloud\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "block_service_endpoint_states": null,
+            "cidr": "192.168.0.0/16",
+            "description": "",
+            "enhanced_local_route": "true",
+            "enterprise_project_id": "0",
+            "id": "f5c2e2ad-48f0-4662-9fe1-9cd5589dfcd2",
+            "name": "vpc-summit-demo",
+            "region": "af-south-1",
+            "routes": [],
+            "secondary_cidr": null,
+            "secondary_cidrs": [],
+            "status": "OK",
+            "tags": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MTgwMDAwMDAwMDAwfX0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "huaweicloud_vpc_eip",
+      "name": "dedicated",
+      "provider": "provider[\"registry.terraform.io/huaweicloud/huaweicloud\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "address": "83.101.50.237",
+            "associate_id": "",
+            "associate_type": "",
+            "auto_pay": null,
+            "auto_renew": null,
+            "bandwidth": [
+              {
+                "charge_mode": "traffic",
+                "id": "250d14f4-bebb-496c-ad75-395cee7e7048",
+                "name": "bandwith-summit",
+                "share_type": "PER",
+                "size": 10
+              }
+            ],
+            "charging_mode": "postPaid",
+            "created_at": "2025-12-06 19:42:58",
+            "enterprise_project_id": "0",
+            "id": "0f424ba2-8265-498d-a05d-a6beea2f2785",
+            "instance_id": "",
+            "instance_type": "",
+            "ipv6_address": "",
+            "name": "",
+            "period": null,
+            "period_unit": null,
+            "port_id": "",
+            "private_ip": "",
+            "publicip": [
+              {
+                "ip_address": "83.101.50.237",
+                "ip_version": 4,
+                "port_id": "",
+                "type": "5_bgp-af-south-1-los1a"
+              }
+            ],
+            "region": "af-south-1",
+            "status": "UNBOUND",
+            "tags": {},
+            "timeouts": null,
+            "updated_at": "2025-12-06T19:42:58Z"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6MzAwMDAwMDAwMDAwLCJ1cGRhdGUiOjMwMDAwMDAwMDAwMH19"
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "huaweicloud_vpc_subnet",
+      "name": "elb-subnet",
+      "provider": "provider[\"registry.terraform.io/huaweicloud/huaweicloud\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "availability_zone": "af-south-1-los1a",
+            "cidr": "192.168.2.0/24",
+            "description": "",
+            "dhcp_domain_name": null,
+            "dhcp_enable": true,
+            "dhcp_ipv6_lease_time": null,
+            "dhcp_lease_time": "87600h",
+            "dns_list": [
+              "100.125.1.250",
+              "100.125.1.14"
+            ],
+            "gateway_ip": "192.168.2.1",
+            "id": "77dfeac2-21e9-4954-a2e7-601e8386fd55",
+            "ipv4_subnet_id": "1fcc815a-c2a4-425a-8cd2-913093dd0d96",
+            "ipv6_cidr": "",
+            "ipv6_enable": false,
+            "ipv6_gateway": "",
+            "ipv6_subnet_id": "",
+            "name": "elb-homezone-subnet",
+            "ntp_server_address": null,
+            "primary_dns": "100.125.1.250",
+            "region": "af-south-1",
+            "secondary_dns": "100.125.1.14",
+            "subnet_id": "1fcc815a-c2a4-425a-8cd2-913093dd0d96",
+            "tags": {},
+            "timeouts": null,
+            "vpc_id": "f5c2e2ad-48f0-4662-9fe1-9cd5589dfcd2"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozMDAwMDAwMDAwMDAsImRlbGV0ZSI6NjAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "huaweicloud_vpc.test"
+          ]
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}

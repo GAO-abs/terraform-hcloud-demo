@@ -1,0 +1,14 @@
+variable "vpc_id" {}
+variable "rds_name" {}
+variable "rds_flavor" {}
+variable "subnet_id" {}
+variable "secgroup_id" {}
+variable "availability_zone1" {}
+variable "availability_zone2" {}
+variable "db_password" {}
+variable "backup_start_time" {}
+variable "backup_keep_days" {}
+variable "volume_size" {}
+variable "db_version" {}
+variable "db_type" {}
+variable "volume_type" {}

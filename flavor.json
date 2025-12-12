@@ -1,0 +1,314 @@
+{
+ "request_id": "49cf4b2e60a41e75283e5ad7a0b36896",
+ "flavors": [
+  {
+   "name": "L4_flavor.elb.s2.large",
+   "shared": true,
+   "info": {
+    "bandwidth": 2000000,
+    "connection": 20000000,
+    "cps": 400000,
+    "lcu": 400,
+    "tls_connection": 1200000,
+    "tls_cps": 20000
+   },
+   "id": "0634ea8d-a69f-4f2c-819c-7001e60b24c8",
+   "type": "L4",
+   "category": 0,
+   "project_id": "0e62128de28f4bc08e06c4561851f012",
+   "public_border_group": "center",
+   "flavor_sold_out": false
+  },
+  {
+   "name": "L7_flavor.elb.s1.large",
+   "shared": true,
+   "info": {
+    "bandwidth": 1000000,
+    "connection": 4000000,
+    "cps": 40000,
+    "https_cps": 4000,
+    "lcu": 200,
+    "qps": 80000
+   },
+   "id": "12bd47c1-b7da-404b-a094-2a2d7f60e95d",
+   "type": "L7",
+   "category": 0,
+   "project_id": "0e62128de28f4bc08e06c4561851f012",
+   "public_border_group": "center",
+   "flavor_sold_out": false
+  },
+  {
+   "name": "L4_flavor.elb.s1.small",
+   "shared": true,
+   "info": {
+    "bandwidth": 50000,
+    "connection": 500000,
+    "cps": 10000,
+    "lcu": 10,
+    "tls_connection": 30000,
+    "tls_cps": 500
+   },
+   "id": "207ff954-7fa0-4258-a9bd-6dd8ee65e614",
+   "type": "L4",
+   "category": 0,
+   "project_id": "0e62128de28f4bc08e06c4561851f012",
+   "public_border_group": "center",
+   "flavor_sold_out": false
+  },
+  {
+   "name": "L4_flavor.elb.s2.small",
+   "shared": true,
+   "info": {
+    "bandwidth": 100000,
+    "connection": 1000000,
+    "cps": 20000,
+    "lcu": 20,
+    "tls_connection": 60000,
+    "tls_cps": 1000
+   },
+   "id": "20b025a9-60f4-410f-896a-bad8a442f03f",
+   "type": "L4",
+   "category": 0,
+   "project_id": "0e62128de28f4bc08e06c4561851f012",
+   "public_border_group": "center",
+   "flavor_sold_out": false
+  },
+  {
+   "name": "L7_flavor.elb.s2.large",
+   "shared": true,
+   "info": {
+    "bandwidth": 2000000,
+    "connection": 8000000,
+    "cps": 80000,
+    "https_cps": 8000,
+    "lcu": 400,
+    "qps": 160000
+   },
+   "id": "2850fe0a-599d-4d7d-b657-b532d4b6259f",
+   "type": "L7",
+   "category": 0,
+   "project_id": "0e62128de28f4bc08e06c4561851f012",
+   "public_border_group": "center",
+   "flavor_sold_out": false
+  },
+  {
+   "name": "L7_flavor.elb.s1.small",
+   "shared": true,
+   "info": {
+    "bandwidth": 50000,
+    "connection": 200000,
+    "cps": 2000,
+    "https_cps": 200,
+    "lcu": 10,
+    "qps": 4000
+   },
+   "id": "32b7235a-2efd-4111-829d-9b74061052ba",
+   "type": "L7",
+   "category": 0,
+   "project_id": "0e62128de28f4bc08e06c4561851f012",
+   "public_border_group": "center",
+   "flavor_sold_out": false
+  },
+  {
+   "name": "L7_flavor.elb.pro.s1.small",
+   "shared": true,
+   "info": {
+    "bandwidth": 1000000,
+    "connection": 200000,
+    "cps": 2000,
+    "https_cps": 2000,
+    "lcu": 10,
+    "qps": 4000
+   },
+   "id": "5763efe4-6a1c-4800-8244-9ef2074eca07",
+   "type": "L7_elastic",
+   "category": 0,
+   "project_id": "0e62128de28f4bc08e06c4561851f012",
+   "public_border_group": "center",
+   "flavor_sold_out": true
+  },
+  {
+   "name": "L4_flavor.elb.s1.medium",
+   "shared": true,
+   "info": {
+    "bandwidth": 200000,
+    "connection": 2000000,
+    "cps": 40000,
+    "lcu": 40,
+    "tls_connection": 120000,
+    "tls_cps": 2000
+   },
+   "id": "5f14f6ee-9d02-4edb-9a6a-5f28bfd097cc",
+   "type": "L4",
+   "category": 0,
+   "project_id": "0e62128de28f4bc08e06c4561851f012",
+   "public_border_group": "center",
+   "flavor_sold_out": false
+  },
+  {
+   "name": "L7_flavor.elb.pro.s1.medium",
+   "shared": true,
+   "info": {
+    "bandwidth": 5000000,
+    "connection": 800000,
+    "cps": 8000,
+    "https_cps": 8000,
+    "lcu": 40,
+    "qps": 16000
+   },
+   "id": "636de662-2207-4478-b7b4-392d0204b219",
+   "type": "L7_elastic",
+   "category": 0,
+   "project_id": "0e62128de28f4bc08e06c4561851f012",
+   "public_border_group": "center",
+   "flavor_sold_out": true
+  },
+  {
+   "name": "L7_flavor.elb.s1.medium",
+   "shared": true,
+   "info": {
+    "bandwidth": 200000,
+    "connection": 800000,
+    "cps": 8000,
+    "https_cps": 800,
+    "lcu": 40,
+    "qps": 16000
+   },
+   "id": "6e96febf-7eac-4e83-8808-8cecd3bb80e8",
+   "type": "L7",
+   "category": 0,
+   "project_id": "0e62128de28f4bc08e06c4561851f012",
+   "public_border_group": "center",
+   "flavor_sold_out": false
+  },
+  {
+   "name": "L7_flavor.elb.s2.medium",
+   "shared": true,
+   "info": {
+    "bandwidth": 400000,
+    "connection": 2000000,
+    "cps": 20000,
+    "https_cps": 2000,
+    "lcu": 100,
+    "qps": 40000
+   },
+   "id": "8395deaf-6155-4682-a485-aeaa395fb82d",
+   "type": "L7",
+   "category": 0,
+   "project_id": "0e62128de28f4bc08e06c4561851f012",
+   "public_border_group": "center",
+   "flavor_sold_out": false
+  },
+  {
+   "name": "L7_flavor.elb.pro.s1.large",
+   "shared": true,
+   "info": {
+    "bandwidth": 10000000,
+    "connection": 4000000,
+    "cps": 40000,
+    "https_cps": 40000,
+    "lcu": 200,
+    "qps": 80000
+   },
+   "id": "900ec461-927e-4dac-be6f-d4da1af544f8",
+   "type": "L7_elastic",
+   "category": 0,
+   "project_id": "0e62128de28f4bc08e06c4561851f012",
+   "public_border_group": "center",
+   "flavor_sold_out": true
+  },
+  {
+   "name": "L7_flavor.elb.pro.max",
+   "shared": true,
+   "info": {
+    "bandwidth": 10000000,
+    "connection": 8000000,
+    "cps": 80000,
+    "https_cps": 80000,
+    "lcu": 0,
+    "qps": 160000
+   },
+   "id": "98480000-53c1-4ee3-a100-6fcdc91174b8",
+   "type": "L7_elastic_max",
+   "category": 0,
+   "project_id": "0e62128de28f4bc08e06c4561851f012",
+   "public_border_group": "center",
+   "flavor_sold_out": false
+  },
+  {
+   "name": "L4_flavor.elb.pro.max",
+   "shared": true,
+   "info": {
+    "bandwidth": 10000000,
+    "connection": 20000000,
+    "cps": 400000,
+    "tls_connection": 20000000,
+    "tls_cps": 20000
+   },
+   "id": "bc46db40-511d-4f10-a8d6-45d76632e77e",
+   "type": "L4_elastic_max",
+   "category": 0,
+   "project_id": "0e62128de28f4bc08e06c4561851f012",
+   "public_border_group": "center",
+   "flavor_sold_out": false
+  },
+  {
+   "name": "L4_flavor.elb.s2.medium",
+   "shared": true,
+   "info": {
+    "bandwidth": 400000,
+    "connection": 4000000,
+    "cps": 80000,
+    "lcu": 80,
+    "tls_connection": 240000,
+    "tls_cps": 4000
+   },
+   "id": "c2f3b0a9-cdfb-49fd-a172-be02ec646167",
+   "type": "L4",
+   "category": 0,
+   "project_id": "0e62128de28f4bc08e06c4561851f012",
+   "public_border_group": "center",
+   "flavor_sold_out": false
+  },
+  {
+   "name": "L4_flavor.elb.s1.large",
+   "shared": true,
+   "info": {
+    "bandwidth": 1000000,
+    "connection": 10000000,
+    "cps": 200000,
+    "lcu": 200,
+    "tls_connection": 600000,
+    "tls_cps": 10000
+   },
+   "id": "cdc704d6-07ed-45c4-ace0-0516427ed372",
+   "type": "L4",
+   "category": 0,
+   "project_id": "0e62128de28f4bc08e06c4561851f012",
+   "public_border_group": "center",
+   "flavor_sold_out": false
+  },
+  {
+   "name": "L7_flavor.elb.s2.small",
+   "shared": true,
+   "info": {
+    "bandwidth": 100000,
+    "connection": 400000,
+    "cps": 4000,
+    "https_cps": 400,
+    "lcu": 20,
+    "qps": 8000
+   },
+   "id": "d75ff8e1-ba04-4d06-ab0d-7f5eb230362a",
+   "type": "L7",
+   "category": 0,
+   "project_id": "0e62128de28f4bc08e06c4561851f012",
+   "public_border_group": "center",
+   "flavor_sold_out": false
+  }
+ ],
+ "page_info": {
+  "previous_marker": "0634ea8d-a69f-4f2c-819c-7001e60b24c8",
+  "current_count": 17
+ }
+}

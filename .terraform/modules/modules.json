@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"cce_cluster","Source":"./modules/cce_iec/cce_cluster","Dir":"modules/cce_iec/cce_cluster"},{"Key":"cce_iec_partition","Source":"./modules/cce_iec/partition","Dir":"modules/cce_iec/partition"},{"Key":"huaweicloud_cce_node_pool","Source":"./modules/cce_iec/nodepool","Dir":"modules/cce_iec/nodepool"}]}
